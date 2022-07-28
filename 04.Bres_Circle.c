@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 void drawCircle(int xc, int yc, int x, int y)
 {
     printf("(%d, %d) \n",xc+x, yc+y);
@@ -19,9 +18,9 @@ void circleBres(int xc, int yc, int r)
     int x = 0, y = r;
     int d = 3 - 2 * r;
     drawCircle(xc, yc, x, y);
+
     while (y >= x)
     {
-
         x++;
 
         if (d > 0)

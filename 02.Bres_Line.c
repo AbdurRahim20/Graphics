@@ -11,25 +11,26 @@ void drawline(int x0, int y0, int x1, int y1)
     {
         if(p>=0)
         {
-            printf("(%f, %f, %f)\n",x,y,7);
+            printf("%d  ,  %d,   %d\n",p, x, y);
             y=y+1;
             p=p+2*dy-2*dx;
         }
         else
         {
-            printf("(%f, %f, %f)\n",x,y,7);
-            p=p+2*dy;
-        }
+            printf("%d  ,  %d,   %d\n",p, x, y);
+            p=p+2*dy;}
             x=x+1;
         }
 }
 int main()
 {
-    int  x0, y0, x1, y1;
+    int x0, y0, x1, y1;
+
     printf("Enter co-ordinates of first point: ");
     scanf("%d%d", &x0, &y0);
     printf("Enter co-ordinates of second point: ");
     scanf("%d%d", &x1, &y1);
+    printf("Pk, Xk+1, Yk+1 \n");
     drawline(x0, y0, x1, y1);
     return 0;
 }

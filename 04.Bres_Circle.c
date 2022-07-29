@@ -38,7 +38,11 @@ void circleBres(int xc, int yc, int r)
 
 int main()
 {
-    int x = 50, y = 50, r = 30;
+    int x , y , r ;
+    printf("Enter co-ordinates (X & Y): ");
+    scanf("%d%d", &x, &y);
+    printf("Enter Radius: ");
+    scanf("%d", &r);
     circleBres(x, y, r);
     return 0;
 }
